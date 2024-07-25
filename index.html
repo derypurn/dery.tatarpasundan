@@ -4,13 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tatar Pasundan</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/kujang_doang.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <nav class="navbar">
       <div class="navbar-menu">
         <a href="#home" class="nav-item">Home</a>
-        <a href="#" class="nav-item">Sejarah</a>
+        <a href="#sejarah" class="nav-item">Sejarah</a>
         <a href="#" class="nav-item">Budaya</a>
         <a href="#" class="nav-item">Kesenian</a>
         <a href="#" class="nav-item">Wisata</a>
@@ -24,33 +33,113 @@
 
     <div class="content">
       <div class="left">
-        <h3 class="sub-judul" id="home">Wilujeng Sumping</h3>
-        <h1 class="big judul">
+        <h3 class="sub-judul" id="home">WILUJENG SUMPING!</h3>
+        <h1 class="big">
           Ensiklopedia <br />
           Tatar Pasundan
         </h1>
+        <p class="sumber">Sumber Pengetahuan Orang
+        Jawa Barat</p>
 
         <div class="right">
           <img class="foto" src="img/suling.png" alt="" />
         </div>
       </div>
     </div>
-    <hr />
+    <hr id="sejarah" />
 
     <div class="content">
       <div class="center">
         <h2 class="judul">Sejarah</h2>
         <p class="text-sejarah">
-          Sejarah Singkat Tatar Pasundan Tatar Pasundan, atau Tanah Sunda,
-          merupakan istilah untuk wilayah geobudaya di bagian barat Pulau Jawa,
-          Indonesia. <br />
-          Wilayah ini merupakan daerah dimana budaya Sunda dikembangkan oleh
-          suku Sunda.
-          <br />Kerajaan-Kerajaan di Tatar Pasundan Tatar Pasundan memiliki
-          sejarah panjang dengan berbagai kerajaan yang pernah berkuasa di
-          wilayah ini. Beberapa kerajaan yang terkenal di antaranya:
+          Sejarah Singkat Tatar Pasundan <br />
+          Tatar Pasundan, atau Tanah Sunda, merupakan istilah untuk wilayah
+          geobudaya di bagian barat Pulau Jawa, <br />
+          Indonesia. Wilayah ini merupakan daerah dimana budaya Sunda
+          dikembangkan oleh suku Sunda. Kerajaan- <br />Kerajaan di Tatar
+          Pasundan Tatar Pasundan memiliki sejarah panjang dengan berbagai
+          kerajaan yang pernah <br />
+          berkuasa di wilayah ini. Beberapa kerajaan yang terkenal di antaranya:
         </p>
+        <div id="services">
+          <div class="container">
+            <div class="services-list">
+              <div>
+                <h2>Kerajaan Tarumanegara</h2>
+                <p> Kerajaan Hindu pertama di Tatar Pasundan, didirikan oleh Raja Purnawarman.
+                </p>
+                <a href="#tarumanegara"><button class="lihat">Lihat&nbsp;→</button></a>
+              </div>
+              <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Kerajaan Galuh</h2>
+                <p>
+                  Kerajaan penerus Tarumanagara, berpusat di Kawali <br> (sekarang Ciamis).
+                </p>
+                <a href="#tarumanegara"><button class="lihat">Lihat&nbsp;→</button></a>              </div>
+              <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2> Kerajaan Sunda</h2>
+                <p>
+                  Kerajaan yang menyatukan Galuh <br> dan Sunda, berpusat di Pakuan Pajajaran (sekarang Bogor)
+                </p>
+                <a href="#tarumanegara"><button class="lihat">Lihat&nbsp;→</button></a>              </div>
+              <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Kesultanan Banten</h2>
+                <p> Kerajaan Islam yang didirikan oleh Fatahillah pada abad 16-19 M, berpusat di Banten.
+                </p>
+                <a href="#tarumanegara"><button class="lihat">Lihat&nbsp;→</button></a>              </div>
+            </div>
+          </div>
       </div>
     </div>
+    <hr>
+    <section class="section">
+      <div class="content left">
+        <h1 class="judul big">Budaya yang terdapat di tatar Pasundan</h1>
+        <button class="selengkapnya">Selengkapnya</button>
+      </div>
+      <div class="slider-container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/guarbumi.jpeg" alt="Budaya 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/hajatlaut.jpeg" alt="Budaya 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Nenjrag_Bumi.jpeg" alt="Budaya 3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/seren_taun.jpg" alt="Budaya 4" />
+            </div>
+            <div class="swiper-slide">
+              <img src="img/Upacara_Tingkepan.jpeg" alt="Budaya 5" />
+            </div>
+          </div>
+          <div class="swiper-pagination">
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
