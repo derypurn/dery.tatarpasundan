@@ -71,21 +71,46 @@ body {
 }
 
 .content {
-  padding-top: 150px;
+  padding-top: 20px;
   color: #ddd;
-  margin-left: 5%;
 }
 
 .big {
-  font-size: 70px;
+  font-size: 90px;
 }
 .sub-judul {
   font-size: 30px;
 }
 .judul {
-  margin-top: -15px;
+  font-size: 50px;
 }
 
+.left,
+.right {
+  flex: 1;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+
+.left {
+  margin-left: 5%;
+}
+
+.right {
+  margin-left: 40%;
+  margin-top: -40%;
+}
+.center {
+  text-align: center;
+}
+.foto {
+  height: 500px;
+  width: auto;
+}
+.text-sejarah {
+  padding-left: 20%;
+  padding-right: 20%;
+}
 @media (max-width: 768px) {
   .navbar-menu {
     flex-direction: column;
