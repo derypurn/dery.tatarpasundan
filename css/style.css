@@ -161,8 +161,13 @@ body {
   font-size: 10px;
 }
 
+.services-list div:hover {
+  background: #ff6600;
+  transform: translateY(-10px);
+}
+
 .lihat {
-  background-color: #ff6600;
+  background-color: #ffc941;
   border-radius: 10px;
   border: none;
   height: 30px;
@@ -195,6 +200,54 @@ body {
   height: auto;
   border-radius: 20px;
 }
+
+.kesenian-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.kesenian-list div {
+  background-color: #1d1d1d;
+  padding: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  border-right: 10px;
+  border-radius: 20px;
+  transition: background 0.3s, transition 0.5s;
+}
+
+.kesenian-list i {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.kesenian-list h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-left: 30px;
+}
+
+.kesenian-list div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.kesenian-list div:hover {
+  background: #ff6600;
+  transform: translateY(-10px);
+}
+.kesenian-hr {
+  margin-top: 50px;
+}
+
 @media (max-width: 768px) {
   .navbar-menu {
     flex-direction: column;
