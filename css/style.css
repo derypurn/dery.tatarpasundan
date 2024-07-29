@@ -93,6 +93,7 @@ body {
 }
 .sumber {
   margin-top: -20px;
+  margin-bottom: 50px;
   font-size: 30px;
 }
 
@@ -105,6 +106,7 @@ body {
 
 .left {
   margin-left: 5%;
+  text-align: left;
 }
 
 .right {
@@ -126,6 +128,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   grid-gap: 30px;
+  text-align: center;
   margin-top: 20px;
   margin-left: 200px;
   margin-right: 200px;
@@ -229,7 +232,6 @@ body {
   font-size: 30px;
   font-weight: 500;
   margin-bottom: 15px;
-  margin-left: 30px;
 }
 
 .kesenian-list div a {
@@ -246,6 +248,11 @@ body {
 }
 .kesenian-hr {
   margin-top: 50px;
+}
+.kesenian-list img {
+  width: 200px;
+  border-radius: 20px;
+  height: 150px;
 }
 
 @media (max-width: 768px) {
