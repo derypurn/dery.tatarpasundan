@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -23,6 +26,9 @@ body {
   gap: 20px;
 }
 
+.navbar-menu i {
+  font-size: 30px;
+}
 .nav-item {
   color: white;
   text-decoration: none;
@@ -141,7 +147,19 @@ body {
   font-weight: 400;
   border-right: 10px;
   border-radius: 20px;
-  transition: background 0.3s, transition 0.5s;
+  transition: background 0.5s, transition 0.5s;
+}
+
+.paragraf {
+  text-align: left;
+  margin-left: 100px;
+}
+
+.paragraf .besar {
+  font-size: 40px;
+}
+.paragraf .sedeng {
+  font-size: 25px;
 }
 
 .services-list h2 {
@@ -171,18 +189,33 @@ body {
 
 .lihat {
   background-color: #ffc941;
-  border-radius: 10px;
+  border-radius: 30px;
   border: none;
   height: 30px;
-  width: 60px;
+  width: 90px;
 }
+
+.tonton-video {
+  background-color: #ffc941;
+  border-radius: 50px;
+  border: none;
+  height: 30px;
+  width: 120px;
+}
+
 .selengkapnya {
   background-color: #ff6600;
-  border-radius: 10px;
+  border-radius: 30px;
   border: none;
   height: 30px;
   width: 200px;
   margin-left: 5%;
+  transition: all ease 0.2s;
+}
+
+.selengkapnya:hover {
+  transform: scale(1.1);
+  border-radius: none;
 }
 
 .section {
@@ -244,7 +277,7 @@ body {
 
 .kesenian-list div:hover {
   background: #ff6600;
-  transform: translateY(-10px);
+  transform: translateY(-20px);
 }
 .kesenian-hr {
   margin-top: 50px;
@@ -253,6 +286,10 @@ body {
   width: 200px;
   border-radius: 20px;
   height: 150px;
+}
+.kesenian-list .angklung {
+  width: 200px;
+  height: 120px;
 }
 
 @media (max-width: 768px) {
